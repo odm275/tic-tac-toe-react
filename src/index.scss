@@ -1,0 +1,55 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+$dimension: (34px)*2;
+$fontSize: ($dimension - 10);
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: $fontSize;
+  font-weight: bold;
+  line-height: $dimension;
+  height: $dimension;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: $dimension;
+}
+
+.square:focus {
+  outline: red;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+.winnerColor{
+  color:red;
+}
