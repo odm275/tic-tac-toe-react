@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Bootstrap from "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.css";
 import { Button } from "react-bootstrap";
-import styles from "./index.css";
+import "./index.css";
 
 function Square(props) {
   let styleSquare = {
